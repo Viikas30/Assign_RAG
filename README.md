@@ -47,24 +47,24 @@ python ingestion.py
 ```
 **What this does:**
 
--Loads kb.txt
+-    Loads kb.txt
 
--Splits text into semantic chunks
+-    Splits text into semantic chunks
 
--Generates embeddings using all-MiniLM-L6-v2
+-    Generates embeddings using all-MiniLM-L6-v2
 
--Persists embeddings in the db/ directory
+-    Persists embeddings in the db/ directory
 
-- Note: This step only needs to be run once, unless the knowledge base changes.
+-    Note: This step only needs to be run once, unless the knowledge base changes.
 
 -5️⃣ Run the Agent
-Once the database is ready, start the agent:
+    Once the database is ready, start the agent:
 
 ```bash
 python main.py
 ```
--You can now interact with the agent via the terminal.
--Type exit to quit.
+-    You can now interact with the agent via the terminal.
+-    Type exit to quit.
 
 - Architecture Overview
 -High-Level Flow
@@ -79,13 +79,13 @@ python main.py
 
 - State & Memory Management
 -1. Message State (Automatic)
--Conversation history is maintained through the messages key, providing short-term context:
+      Conversation history is maintained through the messages key, providing short-term context:
 
 ```python
 {"messages": [HumanMessage(content=user_input)]}
 ```
 2. Persistent Memory using MemorySaver
-We use a checkpointer to enable long-term persistence across different sessions.
+      We use a checkpointer to enable long-term persistence across different sessions.
 ```
 python
 memory = MemorySaver()
@@ -97,12 +97,11 @@ agent = create_agent(
     checkpointer=memory
 )
 ```
--Persistence: MemorySaver enables conversation state to survive restarts.
-
--Isolation: Conversations are scoped using a thread_id, ensuring users/sessions remain isolated.
+-    Persistence: MemorySaver enables conversation state to survive restarts.
+     Isolation: Conversations are scoped using a thread_id, ensuring users/sessions remain isolated.
 
 - WhatsApp Integration (Overview)
--WhatsApp does not provide a free native bot API. Integration is typically handled via official Business API providers.
+    -WhatsApp does not provide a free native bot API. Integration is typically handled via official Business API providers.
 
 -Recommended Providers:
 
