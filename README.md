@@ -70,7 +70,7 @@ python main.py
 -    High-Level Flow
 
 **-User Input → Agent (LangChain create_agent) → Conversation State (Messages + Custom State) → RAG Tool (ChromaDB) → LLM Response
-** Why LangChain?**
+ Why LangChain?**
 -    LangChain is utilized for its robust ecosystem, providing:
 
 -    Agent abstraction: Seamlessly combines LLMs, tools, and reasoning.
@@ -78,7 +78,7 @@ python main.py
 -    First-class tool calling: Simplified integration with external data sources.
 
 - **State & Memory Management**
--1. Message State (Automatic)
+1.   Message State (Automatic)
       Conversation history is maintained through the messages key, providing short-term context:
 
 ```python
@@ -100,7 +100,7 @@ agent = create_agent(
 -    Persistence: MemorySaver enables conversation state to survive restarts.
      Isolation: Conversations are scoped using a thread_id, ensuring users/sessions remain isolated.
 
-- WhatsApp Integration (Overview)
+- **WhatsApp Integration (Overview)**
 -    WhatsApp does not provide a free native bot API. Integration is typically handled via official Business API providers.
 
 -    Meta WhatsApp Cloud API: The direct hosting solution from Meta.
