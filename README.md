@@ -66,18 +66,18 @@ python main.py
 -    You can now interact with the agent via the terminal.
 -    Type exit to quit.
 
-- Architecture Overview
--High-Level Flow
+**Architecture Overview**
+-    High-Level Flow
 
-**-User Input → Agent (LangChain create_agent) → Conversation State (Messages + Custom State) → RAG Tool (ChromaDB) → LLM Response**
+**-User Input → Agent (LangChain create_agent) → Conversation State (Messages + Custom State) → RAG Tool (ChromaDB) → LLM Response
 ** Why LangChain?**
--LangChain is utilized for its robust ecosystem, providing:
+-    LangChain is utilized for its robust ecosystem, providing:
 
--Agent abstraction: Seamlessly combines LLMs, tools, and reasoning.
+-    Agent abstraction: Seamlessly combines LLMs, tools, and reasoning.
 
--First-class tool calling: Simplified integration with external data sources.
+-    First-class tool calling: Simplified integration with external data sources.
 
-- State & Memory Management
+- **State & Memory Management**
 -1. Message State (Automatic)
       Conversation history is maintained through the messages key, providing short-term context:
 
@@ -101,10 +101,6 @@ agent = create_agent(
      Isolation: Conversations are scoped using a thread_id, ensuring users/sessions remain isolated.
 
 - WhatsApp Integration (Overview)
-    -WhatsApp does not provide a free native bot API. Integration is typically handled via official Business API providers.
+-    WhatsApp does not provide a free native bot API. Integration is typically handled via official Business API providers.
 
--Recommended Providers:
-
--Twilio WhatsApp API: Great for rapid development and clear documentation.
-
--Meta WhatsApp Cloud API: The direct hosting solution from Meta.
+-    Meta WhatsApp Cloud API: The direct hosting solution from Meta.
