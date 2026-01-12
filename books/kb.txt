@@ -1,0 +1,24 @@
+AutoStream – Pricing and Features Knowledge Base
+pricing details for autostream plans and their features 
+PLAN: Basic
+Price: $29 per month
+Video Limit: 10 videos per month
+Maximum Resolution: 720p
+Additional Features: None
+
+PLAN: Pro
+Price: $79 per month
+Video Limit: Unlimited videos
+Maximum Resolution: 4K
+Additional Features:
+- AI-generated captions
+- 24/7 customer support
+
+COMPANY POLICIES
+
+Refund Policy:
+- Refunds are not available after 7 days from purchase.
+
+Customer Support Policy:
+- 24/7 support is available only for Pro plan subscribers.
+- Basic plan does not include 24/7 support.
