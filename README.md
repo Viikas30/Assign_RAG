@@ -77,7 +77,7 @@ python main.py
 
 -    First-class tool calling: Simplified integration with external data sources.
 
-- **State & Memory Management**
+**State & Memory Management**
 1.   Message State (Automatic)
       Conversation history is maintained through the messages key, providing short-term context:
 
@@ -100,7 +100,7 @@ agent = create_agent(
 -    Persistence: MemorySaver enables conversation state to survive restarts.
      Isolation: Conversations are scoped using a thread_id, ensuring users/sessions remain isolated.
 
-- **WhatsApp Integration (Overview)**
+**WhatsApp Integration (Overview)**
 -    WhatsApp does not provide a free native bot API. Integration is typically handled via official Business API providers.
 
 -    Meta WhatsApp Cloud API: The direct hosting solution from Meta.
